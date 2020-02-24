@@ -1,14 +1,11 @@
 Ext.define('MyApp.store.UserStore', {
   extend: 'Ext.data.Store',
-  autoLoad: true,
-  autoSync: true,
-  // model: 'User',
+  autoLoad: false,
+  autoSync: false,
   fields: ['login', 'avatar_url'],
+  data: [],
   proxy: {
     type: 'rest',
-    extraParams: {
-      q: 'bionicvapourboy'
-    },
     url: 'https://api.github.com/search/users',
     reader: {
       type: 'json',

@@ -4,6 +4,11 @@ Ext.define('MyApp.view.user.List' ,{
     id: 'userList',
     title: 'Search result',
     store: 'UserStore',
+    viewConfig: {
+      emptyText: 'No records. Use the search panel to gather further results.',
+      deferEmptyText: false
+    },
+    minHeight: 200,
     initComponent: function() {
         var style = 'width: 50px; height: 50px; border-radius: 5px'
         this.columns = [
@@ -35,7 +40,17 @@ Ext.define('MyApp.view.user.List' ,{
             glyph: 'xf02e@FontAwesome',
             handler : function(){
               var store = Ext.data.StoreManager.lookup('BookmarkStore');
-              store.add(record.raw);
+              var recordClone = JSON.parse(JSON.stringify(record.raw));
+              delete recordClone.id;
+              store.add(recordClone);
+              store.sync();
+            }
+          },
+          {
+            text : 'Visit profile',
+            glyph: 'xf113@FontAwesome',
+            handler : function(e, data){
+              window.open(record.raw.html_url, '_BLANK');
             }
           }]
         }).showAt(xy)

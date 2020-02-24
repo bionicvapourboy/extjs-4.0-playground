@@ -22,17 +22,18 @@ Ext.define('MyApp.view.bookmark.List' ,{
     ];
     this.callParent(arguments);
   },
-
+  hideHeaders: true,
   listeners : {
     cellclick : function(context, td, cellIndex, record, tr, rowIndex, e, eOpts) {
       var xy = e.xy;
-      var that = this;
+      var store = this.getStore();
       new Ext.menu.Menu({
         items : [{
           text : 'Remove',
           glyph: 'xf00d@FontAwesome',
           handler : function(e, data){
-            that.getStore().removeAt(cellIndex);
+            store.removeAt(rowIndex);
+            store.sync();
           }
         },
         {
