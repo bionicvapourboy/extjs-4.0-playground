@@ -9,7 +9,8 @@ Ext.define('MyApp.view.SearchPanel', {
     items: [
         {
             fieldLabel: 'GitHub username',
-            name: 'userName'
+            name: 'userName',
+            emptyText: 'Find a GitHub user...'
         },
     ],
     initComponent: function() {

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1534c21b-a96d-4f4b-98c3-95ea48f69103" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/BookmarkStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/BookmarkStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/UserStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/bookmark/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/bookmark/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/user/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/user/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/SearchPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/SearchPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582280859289</updated>
-      <workItem from="1582280874869" duration="30865000" />
+      <workItem from="1582280874869" duration="32048000" />
     </task>
     <servers />
   </component>
